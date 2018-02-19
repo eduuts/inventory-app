@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Name"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/name"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="asdasdadadasdadas"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/item_name"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="price:"
+        android:inputType="number"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/price"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="asdasdadadasdadas"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+    <TextView
+        android:id="@+id/stockTxt"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/item_price"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:text="Stock"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/stock_container"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/stockTxt"
+        >
+
+        <Button
+            android:id="@+id/decrease"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:text="-"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/stock"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="10"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/increase"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:text="+"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/image"
+        android:layout_width="90dp"
+        android:layout_centerInParent="true"
+        android:layout_height="40dp"
+        android:layout_below="@id/stock_container"
+        android:gravity="center_vertical"
+        android:text="Image:"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/image"
+        />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:text="Order" />
+</RelativeLayout>
